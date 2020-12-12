@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ayarlarActivity"
+    android:background="@drawable/blue_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ayarlarEkrani">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ayarlarYazi"
+        android:text="Ayarlar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ayarlarRenk"
+        android:text="Renk"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <GridLayout
+        android:layout_margin="10dp"
+        android:id="@+id/ayarlarRenkButonlari"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="2">
+
+        <Button
+            android:id="@+id/ayarlarMaviRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_background_button"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarKirmiziRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kirmizi_button_background"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarSariRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_background_button"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarYesilRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yesil_background_button"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarSiyahRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/siyah_background_button"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarBeyazRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beyaz_button_background"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarMorRenk"
+            android:textSize="30sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mor_background_button"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/ayarlarDuzRenk"
+            android:textSize="30sp"
+            android:text="B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_simple_background"
+            app:backgroundTint="@null"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1">
+        <TextView
+            android:id="@+id/ayarlarMuzikYazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Müzik"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="40dp"/>
+
+        <ImageButton
+            android:id="@+id/ayarlarMuzikButonu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+            android:background="@drawable/blue_pratik_background_button"
+            app:backgroundTint="@null"/>
+    </GridLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/ayarlarIstatistikleriSifirla"
+        android:textSize="30sp"
+        android:text="Sıfırla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_background_button"
+        app:backgroundTint="@null"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/ayarlarMenu"
+        android:textSize="30sp"
+        android:text="Menü"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_background_button"
+        app:backgroundTint="@null"/>
+
+
+</LinearLayout>
